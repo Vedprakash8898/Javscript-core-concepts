@@ -1,0 +1,33 @@
+<script>
+    const data = new Promise((res,rej) => {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open('GET','https://fakestoreapi.com/products');
+        xmlhttp.send();
+
+        xmlhttp.onload = function(){
+            if(xmlhttp == 404){
+                rej("Page Not found")
+            }
+            else if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                res(xmlhttp.responseText);
+            }
+        }
+
+
+
+    })
+    console.log(data);
+    data
+    .then((rec)=> {
+        // console.log(rec ,typeof rec);
+        console.log(JSON.parse(rec));
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+    .finally(()=>{
+        console.log("promise completed");
+    })
+
+    
+</script>

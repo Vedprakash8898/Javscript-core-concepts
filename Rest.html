@@ -1,0 +1,22 @@
+<script>
+    function value(...rest){
+        console.log(rest);
+        let newval = 0;
+        for(ans of rest){
+            newval += ans;
+        }
+        return newval
+    }
+    
+    const ans1 = value(1,23,34,56);
+    console.log(ans1);
+
+
+ </script>
+
+ <script>
+    const arr1 = [12,20,37,47,90];
+    const arr2 = [13,20,373,47,901];
+    const final = [...arr1 , ...arr2];
+    console.log(final);
+ </script>

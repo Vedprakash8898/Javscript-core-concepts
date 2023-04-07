@@ -1,0 +1,12 @@
+<script>
+    let even =  (n) => {
+     return   n % 2 == 0;
+    }
+    console.log(even);
+
+    let printMsg = (evenno , num) => {
+        const isEven = evenno(num);
+        console.log(`The number ${num} is an even number: ${isEven}.');
+    }
+    printMsg(evenno , 4);
+</script>

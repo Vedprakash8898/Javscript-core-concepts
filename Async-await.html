@@ -1,0 +1,24 @@
+<script>
+  async  function apiData(){
+    let data = await fetch('https://fakestoreapi.com/products');
+    let ans = await data.json();
+    console.log(ans);
+    return ans;
+    }
+    
+    
+let value  = apiData();
+console.log(value);
+
+value.then((ans) => 
+{
+    console.log(ans);
+})
+.catch((error)=>
+{
+    console.log(error);
+})
+.finally(()=>{
+    console.log('the work has been done');
+})
+</script>

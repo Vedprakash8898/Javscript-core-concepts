@@ -1,0 +1,78 @@
+<!-- String meethod In javsscript -->
+<script>
+    const str = 'hello';
+    console.log(str[0]);
+    // another ways
+    console.log(str.charAt(0));
+    console.log(str.charAt(3));
+
+    // in javascript string are immutable
+    const str1 = "rahul";
+    str1[0] = 'R';
+    console.log(str1);
+    // we can  assign thee valueand can change it
+    let str4 = 'Good bye';
+    // we can assign thee value
+    str4 = 'good evening';
+    console.log(str4);
+
+    // javascript are case insensitive
+    let a = 'a';
+    let b = 'A';
+    console.log(a == b);
+
+
+ const message2 = 'This is a long message \
+that spans across multiple lines \
+in the code.';
+console.log(message2);
+
+
+// string length
+let val = 'Amit';
+console.log(val.length);
+
+// js string objects
+let str2 = 'good morning';
+console.log(str2);
+// new keyword
+let str3 = new String("good day");
+console.log(str3);
+
+
+// concat two string
+let srt4 = 'lorem vvcuhs sjsik';
+let srt5 = 'lorem ggdkjk dxg';
+const ans = str4.concat("    " , srt5);
+console.log(ans);
+
+
+// trim: remove the white Space
+let str10 = '      javascript             ';
+console.log(str10.trim());
+
+
+// how to convert string to array
+const value1 = "I am learning javacsript";
+const value2 = value1.split();
+console.log(value2); //array can be access by [0]
+
+// slice method
+let str7 = "My name is Vedprakash bind";
+let vale = str7.slice(3,6);
+console.log(vale);
+
+//Javascript String() function is convert Data types value
+const val4 = 25;
+let string = String(val4);
+console.log(string);
+console.log(typeof string);
+
+let val5 = true;
+let ans7 = String(val5);
+console.log(ans7 , typeof ans7);
+
+// strict
+console.log(5 === '5');
+
+</script>

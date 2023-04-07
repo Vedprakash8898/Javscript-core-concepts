@@ -1,0 +1,16 @@
+<script>
+    //How to  reverse a number without using inbuilt Function
+    let rev = 0;
+    let number = 123456;
+    let lastDigit;
+
+
+    while(number != 0){
+        lastDigit = number % 10;
+        console.log(lastDigit);
+        rev = rev * 10 + lastDigit;
+        number = Math.floor(number/10)
+    }
+    console.log('reverse numer ' +  rev);
+
+</script>

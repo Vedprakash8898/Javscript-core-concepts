@@ -1,0 +1,21 @@
+<script>
+    const arr = [20,30,40,90,89];
+    console.log(arr);
+    //for loop
+   
+    for(let i = 0 ; i < arr.length ; i++) {
+        console.log(arr[i] + 1);
+    }
+    
+</script>
+
+
+<script>
+    let arr1 = [23,90,89,90];
+    let arr2 = [34,56,78,58];
+
+    let fans = arr1.map((val , index)=> {
+        return val + arr2[index]
+    })
+    console.log(fans);
+</script>
